@@ -369,6 +369,16 @@ dt:not(:first-child) {
   tr:last-child td:nth-child(1):after {
     content: ''
   }
+
+  .events {
+    padding: 1em 0;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1em
+  }
+
+  .events .event{
+    margin: 5%;
+  }
 }
 
 @media screen and (max-width:400px) {
@@ -376,5 +386,9 @@ dt:not(:first-child) {
     padding: 1em 0;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 1em
+  }
+
+  .events .event{
+    margin: 5%;
   }
 }
