@@ -105,6 +105,10 @@ hr {
   margin: 0.5em
 }
 
+ul li {
+  margin-left: 2em;
+}
+
 table, thead, tbody, tr, td {
   border-collapse: collapse
 }
