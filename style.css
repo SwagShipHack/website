@@ -1,0 +1,376 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box
+}
+
+body {
+  background: #d7d7d7;
+  font-family: 'Space Mono', monospace;
+  padding-bottom: 2em;
+  font-size: .8rem;
+  line-height: 1.25;
+}
+
+a, a:visited {
+  color: inherit
+}
+
+header {
+  background: #fff;
+  border: 2px solid #000;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: .5em;
+  font-family: vt323, monospace;
+  font-size: 1rem
+}
+
+header>* {
+  display: flex;
+  flex-direction: row;
+  align-items: center
+}
+
+header .left span {
+  width: 200px
+}
+
+.logo {
+  height: 2em;
+  display: block;
+  margin: .5em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+header span {
+  font-size: 1.25em;
+  margin: 0 .5em
+}
+
+.wrapper {
+  max-width: 980px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1em;
+  padding-right: 1em
+}
+
+.wrapper .wrapper {
+  padding-left: 0;
+  padding-right: 0
+}
+
+section {
+  margin-top: 2em;
+  background: #fff;
+  font-size: 1.25em;
+  border: 2px solid #000
+}
+
+section .top {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border-bottom: 2px solid #000
+}
+
+section .top span {
+  background: #fff;
+  padding: .5em;
+  font-family: vt323, monospace;
+  font-size: 1.25rem
+}
+
+section .content {
+  padding: 1em;
+  line-height: 1.25em
+}
+
+section .content.table {
+  padding: 2px
+}
+
+.content h1 {
+  margin-bottom: 1rem
+}
+.content h2 {
+  font-size: 1.25em;
+  margin-top: 0.5rem
+}
+
+hr {
+  margin: 0.5em
+}
+
+table, thead, tbody, tr, td {
+  border-collapse: collapse
+}
+
+table {
+  width: 100%
+}
+
+thead tr td {
+  border-bottom: 2px solid #000
+}
+
+tbody td {
+  padding: 1.25em .75em .25em;
+  vertical-align: top
+}
+
+td h2 {
+  font-size: 2em;
+  font-family: vt323, monospace;
+  margin-top: -.25em
+}
+
+td h3 {
+  margin: .5rem 0
+}
+
+td p {
+  margin-bottom: 1em;
+  margin-top: 1em
+}
+
+td p:last-child {
+  margin-bottom: 0
+}
+
+thead td {
+  font-weight: 700;
+  font-family: vt323, monospace;
+  font-size: 1.25rem;
+  padding: .75rem
+}
+
+tbody tr:first-child td {
+  padding-top: .75em
+}
+
+tbody tr:last-child td {
+  padding-bottom: .75em
+}
+
+.events {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  padding: 1em;
+  grid-gap: 1em;
+  align-items: center;
+}
+
+.events {
+  text-decoration: none
+}
+
+.events img {
+  max-width: 80%;
+  max-height: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.events .event{
+  height: 10em;
+  width: 10em;
+  border: 2px solid #000;
+  margin: 0;
+  display: flex;
+  align-items: center
+}
+
+form {}
+
+.input-group:not(:last-child) {
+  margin-bottom: 1em
+}
+
+form span {
+  display: block
+}
+
+input {
+  font-family: vt323, monospace
+}
+
+.input-group input {
+  display: block;
+  width: 100%;
+  padding: .25em;
+  outline: 0;
+  border: 2px solid #d7d7d7;
+  font-size: .8em
+}
+
+.input-group input:focus {
+  border-color: #000
+}
+
+.input-group.checkbox div * {
+  display: inline-block;
+  width: auto
+}
+
+input[type=submit] {
+  font-size: 1.25em;
+  background: #000;
+  border: 0;
+  outline: 0;
+  color: #fff;
+  padding: .25em .75em
+}
+
+.address {
+  padding: 1em;
+  margin-top: 1em;
+  background: #d7d7d7
+}
+
+.address .input-group input {
+  border-color: #b7b7b7
+}
+
+.address .input-group input:focus {
+  border-color: #000
+}
+
+.address select {
+  width: 100%;
+  font-size: 1em
+}
+
+dt {
+  font-weight: 700;
+  font-family: vt323, monospace;
+  font-size: 1.25rem
+}
+
+dt:not(:first-child) {
+  margin-top: 2em
+}
+
+.error {
+  background: red;
+  color: #fff;
+  padding: 1em;
+  margin-top: 1em
+}
+
+#intro p {
+  margin-top: 1em
+}
+
+#stream .content {
+  padding: 0
+}
+
+#stream a {
+  background: #000;
+  color: #fff;
+  width: 100%;
+  display: block;
+  text-align: center;
+  padding: 1em;
+  font-size: 2em
+}
+
+@media screen and (max-width:800px) {
+  .events img {
+    max-height: 90px;
+    width: auto;
+    margin: 0 auto;
+    display: block
+  }
+  #stream a {
+    line-height: 1.5;
+    font-size: 1.5rem
+  }
+}
+
+@media screen and (max-width:600px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+    padding: .75em
+  }
+  header .left {
+    flex-direction: column
+  }
+  header .left span {
+    width: auto;
+    margin-bottom: .25em
+  }
+  header img {
+    margin-right: 0;
+    height: 3em;
+    margin-bottom: .5em
+  }
+  section .top {
+    background-size: 0, 2px 2em
+  }
+  .events {
+    grid-template-columns: repeat(4, 1fr)
+  }
+  table, td, tr {
+    display: block;
+    width: 100%
+  }
+  thead {
+    display: none
+  }
+  tbody {
+    width: 100%;
+    display: block;
+    padding: 1em
+  }
+  tr {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    flex-direction: row;
+    border: 2px solid #d7d7d7;
+    width: 100%;
+    margin-bottom: 1em
+  }
+  td {
+    padding: .5em!important
+  }
+  tr td h2 {
+    font-size: 1.5em
+  }
+  tr td h3 {
+    font-size: 1.25em
+  }
+  tr:last-child td.info {
+    padding-top: .5em!important
+  }
+  tr td:last-child {
+    grid-column: 1/4;
+    padding-top: 0!important;
+    font-weight: 700
+  }
+  td:nth-child(1):after {
+    content: ' PST'
+  }
+  td:nth-child(2):after {
+    content: ' EST'
+  }
+  td:nth-child(3):after {
+    content: ' GMT'
+  }
+  tr:last-child td:nth-child(1):after {
+    content: ''
+  }
+}
+
+@media screen and (max-width:400px) {
+  .events {
+    padding: 1em 0;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1em
+  }
+}
