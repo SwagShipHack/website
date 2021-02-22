@@ -162,7 +162,7 @@ tbody tr:last-child td {
 
 .events {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   padding: 1em;
   grid-gap: 1em;
   align-items: center;
@@ -186,6 +186,10 @@ tbody tr:last-child td {
   margin: 0;
   display: flex;
   align-items: center
+}
+
+.events .event.inverse{
+  background-color: #000;
 }
 
 form {}
