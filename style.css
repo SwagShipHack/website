@@ -224,13 +224,18 @@ input {
   width: auto
 }
 
-input[type=submit] {
+button[type=submit] {
   font-size: 1.25em;
   background: #000;
   border: 0;
   outline: 0;
   color: #fff;
-  padding: .25em .75em
+  padding: .25em .75em;
+  width: 100%;
+}
+
+button[type=submit]:hover {
+  background-color: #b7b7b7;
 }
 
 .address {
