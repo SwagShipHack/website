@@ -233,11 +233,16 @@ input[type="checkbox"] {
   border: 2px solid #d7d7d7;
   vertical-align: -0.5em;
   color: #000;
+  position: relative;
+  cursor: pointer;
 }
 
 input[type="checkbox"]::before {
-  content: "X";
-  position: absolute;
+  content: "x"; /* Changed to a lower-case X */
+  font-family: monospace;
+  position: relative;
+  top: -4px;
+  left: 1.4px;
   font-size: 1.3em;
   visibility: hidden;
 }
