@@ -178,6 +178,10 @@
           'country',
           document.querySelector('input[name="country"]').value
       )
+      formData.append(
+          'captchaResponse',
+          document.querySelector('input[name="captchaResponse"]').value
+      )
 
       fetch("https://getform.io/f/10e60c39-a8af-41d3-9455-af8b740880ee",
       {
