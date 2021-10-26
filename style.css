@@ -9,7 +9,7 @@ body {
   font-family: 'Space Mono', monospace;
   padding-bottom: 2em;
   font-size: .8rem;
-  line-height: 1.25;
+  line-height: 1.2rem;
 }
 
 a, a:visited {
@@ -98,6 +98,7 @@ section .content.table {
 }
 .content h2 {
   font-size: 1.25em;
+  line-height: 2.5rem;
   margin-top: 0.5rem
 }
 
