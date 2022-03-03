@@ -411,15 +411,6 @@ dt:not(:first-child) {
     padding-top: 0!important;
     font-weight: 700
   }
-  td:nth-child(1):after {
-    content: ' PST'
-  }
-  td:nth-child(2):after {
-    content: ' EST'
-  }
-  td:nth-child(3):after {
-    content: ' GMT'
-  }
   tr:last-child td:nth-child(1):after {
     content: ''
   }
