@@ -77,6 +77,15 @@ section .top {
   border-bottom: 2px solid #000
 }
 
+section .bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border-bottom: 2px solid #000;
+  font-size: 1.25em;
+  padding: .5em;
+}
+
 section .top span {
   background: #fff;
   padding: .5em;
@@ -115,7 +124,12 @@ table, thead, tbody, tr, td {
 }
 
 table {
+  margin: 1em;
   width: 100%
+}
+
+td, th {
+  text-align: center;
 }
 
 thead tr td {
@@ -354,12 +368,15 @@ dt:not(:first-child) {
   section .top {
     background-size: 0, 2px 2em
   }
+  section .bottom {
+    background-size: 0, 2px 2em
+  }
   .events {
     grid-template-columns: repeat(4, 1fr)
   }
   table, td, tr {
     display: block;
-    width: 100%
+    width: 100%;
   }
   thead {
     display: none
