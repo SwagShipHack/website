@@ -124,7 +124,8 @@ table, thead, tbody, tr, td {
 }
 
 table {
-  margin: 1em;
+  margin-top: 1em;
+  margin-bottom: 1em;
   width: 100%
 }
 
@@ -384,11 +385,10 @@ dt:not(:first-child) {
   tbody {
     width: 100%;
     display: block;
-    padding: 1em
   }
   tr {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 60px 60px, 60px;
     flex-direction: row;
     border: 2px solid #d7d7d7;
     width: 100%;
@@ -402,17 +402,6 @@ dt:not(:first-child) {
   }
   tr td h3 {
     font-size: 1.25em
-  }
-  tr:last-child td.info {
-    padding-top: .5em!important
-  }
-  tr td:last-child {
-    grid-column: 1/4;
-    padding-top: 0!important;
-    font-weight: 700
-  }
-  tr:last-child td:nth-child(1):after {
-    content: ''
   }
 
   .events {
